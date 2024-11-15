@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Hucres</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>                    
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>    
+                </ul>
+            </nav>        
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="assets/images/Foto de Perfil.png" alt="Foto de Perfil">
+            </div>
+            <h1>HUGO CRESPO MARTINEZ</h1>
+            <h2>Estudiante de Desarrollo Web Full Stack</h2>
+            <div class="redes">
+                <a href="https://github.com/Hucres" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/hugo-crespo-martinez/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com/Hucres" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/hucres/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>                    
+        </div>
+    </section>    
+
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span class="text-span">Hola, soy Hugo Crespo, estudiante de Desarrollo Web Full Stack.</span> <br>
+            Me gusta la tecnología, el deporte, la música, la lectura y los videojuegos. <br>           
+            Aprender y mejorar constantemente es mi consigna, es por eso que estoy aprendiendo a programar, <br> 
+            aunque ha sido un proceso dificil, asimilar la terminología y la logica de programación.</p>
+
+                <div class="fila">
+
+                    <div class="col">
+                        <h3>Datos Personales</h3>
+                        <ul>
+                            <li>
+                                <strong>Cumpleaños</strong>
+                                20/04/1994
+                            </li>
+                            <li>
+                                <strong>Telefono</strong>
+                                314-227-4457
+                            </li>
+                            <li>
+                                <strong>Email</strong>
+                                hugo.crespo.m@gmail.com
+                            </li>
+                            <li>
+                                <strong>Direccion</strong>
+                                Calle 105 #25-27 Bucaramanga, Santander
+                            </li>
+                            <li>
+                                <strong>Cargo</strong>
+                                <span>KAM Santander</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h3>Intereses</h3>
+                        <div class="contenedor-intereses">
+                            <div class="interes">
+                                <i class="fa-solid fa-gamepad"></i>
+                                <span>JUEGOS</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-headphones"></i>
+                                <span>MUSICA</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-plane"></i>
+                                <span>VIAJES</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-book"></i>
+                                <span>LIBROS</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-person-running"></i>
+                                <span>RUNNING</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-car"></i>
+                                <span>CARROS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+        </div>            
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>JAVASCRIPT</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>20%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>        
+                    <div class="skill">
+                        <span>HTML</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PHP</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>20%</span>
+                            </div>
+                        </div>
+                    </div>            
+                </div>
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>COMUNICACIÓN</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>TRABAJO EN EQUIPO</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>        
+                    <div class="skill">
+                        <span>CREATIVIDAD</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>DEDICACIÓN</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>            
+                </div>
+            </div> 
+        </div>
+    </section>  
+          
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Desarrollo Web Full Stack</h4>
+                        <span class="casa">ENYOI</span>
+                        <span class="fecha">2024 - Actual</span>
+                        <p>Desarrollo del pensamiento logico y la programación orienda a objetos.
+                            Bases de datos relacionales y no relacionales.
+                            Html, Css, Javascript, Php, Node.js, React, Testing, Git, Scrum.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Community Manager</h4>
+                        <span class="casa">CODERHOUSE</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Creación de contenido y manejo de campañas en redes sociales.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Bachillerato Tecnico</h4>
+                        <span class="casa">INSTITUTO TECNICO SUPERIOR INDUSTRIAL</span>
+                        <span class="fecha">2005 - 2011</span>
+                        <p>Desarrollo de conocimientos basicos para ingresar al campus universitario.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="item der">
+                        <h4>KAM Santander</h4>
+                        <span class="casa">GRUPO CARLOS SANTAMARIA</span>
+                        <span class="fecha">2024 - Actualmente</span>
+                        <p>Garantizar la venta y distribución del portafolio en clientes directos del canal Superetes y Minimercados, 
+                            cumpliendo con los objetivos comerciales de venta, distribución y posicionamiento. 
+                            Aperturar nuevos canales como el tat, mayorista, mediante distribuidoras asociadas. 
+                            Velar por un buen manejo de cartera y pagos.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Representante de ventas</h4>
+                        <span class="casa">CALA COLOMBIA S.A.</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Fidelización de clientes Acompañamiento a equipos TaT, Minimercados y Mayoristas. 
+                            Gestión de seguimiento en ventas y concursos. 
+                            Visita a Distribuidores y subdistribuidores.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Asesor Comercial</h4>
+                        <span class="casa">ALPINA PRODUCTOS ALIMENTICIOS S.A.</span>
+                        <span class="fecha">2019 - 2022</span>
+                        <p>Cumplimiento de presupuestos en base a crecimientos y reducción porcentaje de averías.
+                           Planeación y ejecución de estrategias comerciales que garantizaran el cumplimiento de los objetivos trazados.
+                          Monitoreo de KPI´S.
+                          Gestión de cartera.
+                          Liderazgo de equipo Merchandising.
+                          Abastecimiento de productos de la marca en distintas cadenas regionales
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>    
+    </section>
+
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <div class="col">
+                    <input type="text" placeholder="Tu Nombre">
+                    <input type="text" placeholder="Numero Telefono">
+                    <input type="text" placeholder="Direccion">
+                    <input type="text" placeholder="Email">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <div class="col">
+                    <img src="assets/images/Frase de contacto.png" alt="">
+                    <div class="info">
+                    </div>
+                </div>
+            </div>    
+        </div>    
+    </section>
+
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+            <div class="redes">
+                <a href="https://github.com/Hucres" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/hugo-crespo-martinez/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com/Hucres" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/hucres/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
